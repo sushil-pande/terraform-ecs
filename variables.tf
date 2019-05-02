@@ -33,10 +33,6 @@ variable "autoscale_desired" {
     default = "1"
     description = "Desired autoscale (number of EC2)"
 }
-variable "key_name"{
- description = "Enter the path to the SSH Public Key to add to AWS."
- default = "/Downloads/jenkins.pem"
-}
 
 variable "instance_type" {
     default = "t2.micro"
