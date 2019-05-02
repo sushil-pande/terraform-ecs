@@ -77,7 +77,7 @@ resource "aws_ecs_service" "my-ecs-service" {
 #Creating Task definition
 resource "aws_ecs_task_definition" "mongo" {
   family                = "mongo"
-  container_definitions = "${file("task-definitions/mongo.json")}"
+  container_definitions = "${file("task-definition/mongo.json")}"
 
   volume {
     name      = "efs"
