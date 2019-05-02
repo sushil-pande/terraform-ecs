@@ -1,0 +1,21 @@
+[
+    {
+      "name": "mongo-icsp-test",
+      "image": "643898657754.dkr.ecr.us-east-2.amazonaws.com/mongo",
+      "cpu": 10,
+      "memory": 500,
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 27017,
+          "hostPort": 27017
+        }
+      ]
+      ,"mountPoints": [
+        {
+          "containerPath": "/data/db",
+          "sourceVolume": "efs"
+        }
+      ]
+    }
+]  
